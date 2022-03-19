@@ -10,7 +10,6 @@ const bookListSection = document.querySelector('.book-list');
 const main = document.querySelector('.main');
 const container = document.querySelector('.container');
 const form = document.querySelector('.book-form__form');
-const bookLists = document.querySelector('.book-list__lists');
 
 const bookList = new BookList();
 
@@ -22,7 +21,7 @@ const run = () => {
   currentDate(container, main);
 
   // Check if there is a book list
-  isAbook(bookList, bookLists, bookListSection);
+  isAbook(bookList, bookListSection);
 
   // Add Book to Local storage
   addBook(form, bookList);

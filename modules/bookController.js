@@ -1,8 +1,12 @@
-const isAbook = (bookList, bookLists, bookListSection) => {
+const isAbook = (bookList, bookListSection) => {
+  // const bookLists = document.querySelector('.book-list__lists');
+  const bookLists = document.createElement('div');
+  bookLists.className = 'book-list__lists';
   if (!bookList.books.length) {
     bookLists.style.display = 'none';
-    bookListSection.lastElementChild.style.display = 'inline-block';
+    bookListSection.lastElementChild.style.display = 'flex';
   } else bookList.displayBook(bookLists);
+  bookListSection.insertBefore(bookLists, bookListSection.lastElementChild);
 };
 
 const addBook = (form, bookList) => {

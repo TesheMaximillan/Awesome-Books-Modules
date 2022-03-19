@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Assets/Images/colorful-and-irregular-stacked-books-vector-11743683.jpg"
+    type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Awesome Books</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-main">
+        <p class="navbar-main__title">Awesome Books</p>
+        <ul class="navbar-main__list">
+          <li class="list-item list-item__1">
+            <a class="active">List</a>
+          </li>
+          <li class="list-item list-item__2">
+            <a class="">Add new</a>
+          </li>
+          <li class="list-item list-item__3">
+            <a class="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="book-list section display">
+        <h2 class="title">All awesome books</h2>
+        <div class="book-list__lists"></div>
+        <h3 class="empty-list">Sorry You don't have any book yet!!! <br>Please Add to have one!!</h3>
+      </section>
+      <section class="book-form section">
+        <h2 class="title">Add a new book</h2>
+        <form class="book-form__form">
+          <div class="book-title">
+            <label for="title"></label>
+            <input type="text" name="title" placeholder="Title" id="title" required>
+          </div>
+          <div class="book-author">
+            <label for="author"></label>
+            <input type="text" name="author" placeholder="Author" id="author">
+          </div>
+          <button class="add" type="submit">Add</button>
+        </form>
+      </section>
+      <section class="contact-info section">
+        <h2 class="title">Contact Information</h2>
+        <div class="contact-info__detail">
+          <p>Do you have any question or just you want to say "Hello"? <br>You can reach out to us!</p>
+          <ul>
+            <li>Our e-mail: dear.teshe@gmail.com</li>
+            <li>Our phone number: +251911017684</li>
+            <li>Our address: Streetname Zewditu street, Addis Ababa, Ethiopia</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="copy-right">
+      <p class="copy">Copyright</p>
+      <p> &copy;Awesome Book website by Teshome Kurabachew</p>
+    </footer>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,62 +1,55 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> Description the project.
-
+> In this capstone project, I created a plain javascript project which is add a book title and it's author into local storage retrive that items to book list.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- JavaScript
 
-## Live Demo (if available)
+## Methodology
 
-[Live Demo Link](https://livedemo.com)
+- CSS Preprocessor (SCSS)
+- JavaScript used for Dom Manipulation
+- JavaScript events are used
+- JavaScript objects to store and access data
+- Browser Local Storage
+- Semantic HTML Tag
+- CSS Box Model
+- CSS FlexBox
+- Device Adaptability
+- Github pages for deployment
 
+## Working Device Screen Size
 
-## Getting Started
+- All screen size
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## Live Demo
 
+[Live Demo Link]( https://teshemaximillan.github.io/Awesome-Books/)
 
-To get a local copy up and running follow these simple example steps.
+## Screenshot
 
-### Prerequisites
+![project screenshot](![Awesome Book Screenshot](https://user-images.githubusercontent.com/51437483/159135872-8873034c-198c-4b56-9cd0-70091ad7b818.jpg))
 
-### Setup
+# Author
 
-### Install
+👤 **Teshome Kurabachew**
 
-### Usage
+- GitHub: [@githubhandle](https://github.com/TesheMaximillan)
+- Twitter: [@twitterhandle](https://twitter.com/TesheKura)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/teshome-kurabachew-aa8067180/)
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Credential
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/TesheMaximillan/Awesome-Books/issues).
 
 ## Show your support
 
@@ -64,9 +57,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse 
 
 ## 📝 License
 

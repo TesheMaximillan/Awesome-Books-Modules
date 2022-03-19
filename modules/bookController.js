@@ -2,7 +2,7 @@ const isAbook = (bookList, bookLists, bookListSection) => {
   if (!bookList.books.length) {
     bookLists.style.display = 'none';
     bookListSection.lastElementChild.style.display = 'inline-block';
-  } else bookList.displayBook();
+  } else bookList.displayBook(bookLists);
 };
 
 const addBook = (form, bookList) => {

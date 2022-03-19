@@ -6,6 +6,7 @@ const main = document.querySelector('.main');
 const container = document.querySelector('.container');
 const form = document.querySelector('.book-form__form');
 const bookLists = document.querySelector('.book-list__lists');
+const remove = document.querySelectorAll('.books__remove');
 
 class Book {
   constructor(title, author) {
@@ -92,7 +93,6 @@ function run() {
   });
 
   // Remove book from the list
-  const remove = document.querySelectorAll('.books__remove');
   for (let i = 0; i < remove.length; i += 1) {
     remove[i].addEventListener('click', () => {
       bookList.removeBook(i);

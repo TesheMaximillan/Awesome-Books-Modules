@@ -62,7 +62,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/TesheMaximillan/Awesome-Books/issues).
+Feel free to check the [issues page](https://github.com/TesheMaximillan/Awesome-Books-Modules/issues).
 
 ## Show your support
 

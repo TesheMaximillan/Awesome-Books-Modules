@@ -2,7 +2,7 @@
 
 # Awesome Books
 
-> In this capstone project, I created a plain javascript project which is add a book title and it's author into local storage retrive that items to book list.
+> In this capstone project, I created a plain javascript project which is add a book title and it's author into localstorage and retrive the items to book list section.
 
 ## Built With
 

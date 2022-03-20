@@ -40,7 +40,7 @@
 
 ## Live Demo
 
-[Live Demo Link]( https://teshemaximillan.github.io/Awesome-Books/)
+[Live Demo Link]( https://teshemaximillan.github.io/Awesome-Books-Modules/)
 
 ## Screenshot
 

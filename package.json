@@ -17,5 +17,20 @@
   },
   "dependencies": {
     "luxon": "^2.3.1"
-  }
+  },
+  "files": [
+    "build/node/luxon.js",
+    "build/node/luxon.js.map",
+    "build/cjs-browser/luxon.js",
+    "build/cjs-browser/luxon.js.map",
+    "build/amd/luxon.js",
+    "build/amd/luxon.js.map",
+    "build/global/luxon.js",
+    "build/global/luxon.js.map",
+    "build/global/luxon.min.js",
+    "build/global/luxon.min.js.map",
+    "build/es6/luxon.js",
+    "build/es6/luxon.js.map",
+    "src"
+  ]
 }

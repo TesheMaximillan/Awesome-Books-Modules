@@ -12,10 +12,11 @@ const container = document.querySelector('.container');
 const form = document.querySelector('.book-form__form');
 
 const bookList = new BookList();
+const tempList = bookList.books.length;
 
 const run = () => {
   // Control Navbar
-  navController(section, listItem);
+  navController(section, listItem, bookList, tempList);
 
   // Add current date
   currentDate(container, main);

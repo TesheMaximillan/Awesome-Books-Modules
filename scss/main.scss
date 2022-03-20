@@ -163,7 +163,12 @@ body {
 
     @include section;
 
-    width: 50%;
+    min-width: 50%;
+    background: rgba(239, 239, 239, 0.1);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;    
+    border-radius: 5px;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
 
     &__form {
       width: 100%;
@@ -179,10 +184,17 @@ body {
         margin: 1rem 0;
         border: 2px solid var(--dark);
         border-radius: 3px;
+        font-size: inherit;
+        font-family: inherit;
 
-        &::placeholder {
-          color: var(--dark);
-          font-weight: 600;
+        &:hover,
+        &:focus {
+          outline: none !important;
+          border: 2px solid rgba(20, 178, 241, 0.5);          
+        }
+
+        &:focus::placeholder {
+          color: transparent;
         }
       }
 
@@ -190,12 +202,19 @@ body {
         align-self: flex-end;
         margin-top: 1rem;
         font-weight: 600;
+        font-family: inherit;
+        font-size: inherit;
         padding: 0.5rem 2rem;
         border: 2px solid var(--dark);
         background-color: var(--white);
         cursor: pointer;
         box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
         transition: all 0.2s;
+
+        &:hover {
+          background-color: var(--light-grey);
+          border: 2px solid var(--light-grey);
+        }
 
         &:active {
           transform: translateY(2px);

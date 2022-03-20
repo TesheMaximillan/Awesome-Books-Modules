@@ -12,6 +12,8 @@
 
 ## Methodology
 
+### General Requirements
+
 - CSS Preprocessor (SCSS)
 - JavaScript used for Dom Manipulation
 - JavaScript events are used
@@ -22,6 +24,15 @@
 - CSS FlexBox
 - Device Adaptability
 - Github pages for deployment
+
+### Specific Requirements
+
+- `npm init -y` command used to create package.json file
+- ES6 Syntax is used
+- Codes are divided into modules
+- Method and functions are refactored with arrow functions
+- `let` and `const` are used instead of `var`
+- `Luxon` library is used for the current date
 
 ## Working Device Screen Size
 

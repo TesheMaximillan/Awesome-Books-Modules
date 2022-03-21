@@ -13,6 +13,6 @@ const navController = (section, listItem, bookList, tempList) => {
       if (i === 0 && bookList.books.length > tempList) window.location.reload();
     });
   }
-}
+};
 
 export default navController;

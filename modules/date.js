@@ -1,4 +1,4 @@
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import { DateTime } from './luxon/src/luxon.js';
 
 export default function currentDate(container, main) {
   const currentDate = document.createElement('p');

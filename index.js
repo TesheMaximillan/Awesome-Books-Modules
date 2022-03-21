@@ -1,4 +1,3 @@
-/* eslint-disable max-classes-per-file */
 import BookList from './modules/BookList.js';
 import navController from './modules/navController.js';
 import currentDate from './modules/date.js';

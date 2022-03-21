@@ -1,62 +1,68 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> Description the project.
-
+> In this capstone project, I created a plain javascript project which is add a book title and it's author into localstorage and retrive the items to book list section.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- JavaScript
 
-## Live Demo (if available)
+## Methodology
 
-[Live Demo Link](https://livedemo.com)
+### General Requirements
 
+- CSS Preprocessor (SCSS)
+- JavaScript used for Dom Manipulation
+- JavaScript events are used
+- JavaScript objects to store and access data
+- Browser Local Storage
+- Semantic HTML Tag
+- CSS Box Model
+- CSS FlexBox
+- Device Adaptability
+- Github pages for deployment
 
-## Getting Started
+### Specific Requirements
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- `npm init -y` command used to create package.json file
+- ES6 Syntax is used
+- Codes are divided into modules
+- Method and functions are refactored with arrow functions
+- `let` and `const` are used instead of `var`
+- `Luxon` library is used for the current date
 
+## Working Device Screen Size
 
-To get a local copy up and running follow these simple example steps.
+- All screen size
 
-### Prerequisites
+## Live Demo
 
-### Setup
+[Live Demo Link]( https://teshemaximillan.github.io/Awesome-Books-Modules/)
 
-### Install
+## Screenshot
 
-### Usage
+![project screenshot](![Awesome Book Screenshot](https://user-images.githubusercontent.com/51437483/159142705-bf9f636c-ef50-46d5-a3cb-84d0b7ea0250.JPG))
 
-### Run tests
+![project screenshot](![Awesome Book Screenshot](https://user-images.githubusercontent.com/51437483/159135872-8873034c-198c-4b56-9cd0-70091ad7b818.jpg))
 
-### Deployment
+# Author
 
+👤 **Teshome Kurabachew**
 
+- GitHub: [@githubhandle](https://github.com/TesheMaximillan)
+- Twitter: [@twitterhandle](https://twitter.com/TesheKura)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/teshome-kurabachew-aa8067180/)
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Credential
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/TesheMaximillan/Awesome-Books-Modules/issues).
 
 ## Show your support
 
@@ -64,9 +70,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse 
 
 ## 📝 License
 

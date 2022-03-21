@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+:root {
+  --light-grey: #efefef;
+  --white: #fff;
+  --dark: #161515;
+  --active: #14b3f1;
+  --danger: #f00;
+}
+
+// ///////////////////////////// Mixin
+@mixin navmix($dir) {
+  display: flex;
+  flex-direction: $dir;
+  padding: 1rem 3rem;
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+}
+
+@mixin section {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.main .display {
+  display: flex !important;
+}
+
+.active {
+  color: var(--active) !important;
+  font-weight: 600;
+}
+
+// ///////////////////////////// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--dark);
+  background-color: var(--light-grey);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--white);
+  height: 100vh;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.18) 0 2px 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  @include navmix(column);
+
+  margin-bottom: 1rem;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      font-weight: 600;
+    }
+
+    &__list {
+      display: flex;
+
+      .list-item {
+        padding-left: 1.5rem;
+        list-style: none;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: var(--dark);
+        }
+      }
+
+      .list-item:not(:last-child) {
+        padding-right: 1.5rem;
+        border-right: 2px solid var(--dark);
+      }
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  .book-list {
+    display: none;
+
+    @include section;
+
+    width: 100%;
+
+    &__lists {
+      margin: 5rem;
+      width: 100%;
+      padding: 2rem;
+      border: 3px solid var(--dark);
+      max-height: calc(100vh - 35.68rem);
+      overflow-y: auto;
+
+      .books {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+
+        &:nth-child(odd) {
+          background-color: var(--light-grey);
+        }
+
+        &__remove {
+          padding: 0.5rem 2rem;
+          border: 2px solid var(--danger);
+          border-radius: 3px;
+          background-color: var(--white);
+          font-weight: 600;
+          font-family: inherit;
+          color: var(--danger);
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--danger);
+            color: var(--white);
+            transition: all 0.2s;
+          }
+
+          &:hover:active {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+
+  .book-form {
+    display: none;
+
+    @include section;
+
+    min-width: 50%;
+    background: rgba(239, 239, 239, 0.1);
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    border-radius: 5px;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+
+    &__form {
+      width: 100%;
+      margin-top: 5rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      .book-title > input,
+      .book-author > input {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem 0;
+        border: 2px solid var(--dark);
+        border-radius: 3px;
+        font-size: inherit;
+        font-family: inherit;
+
+        &:hover,
+        &:focus {
+          outline: none !important;
+          border: 2px solid rgba(20, 178, 241, 0.5);
+        }
+
+        &:focus::placeholder {
+          color: transparent;
+        }
+      }
+
+      .add {
+        align-self: flex-end;
+        margin-top: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        font-size: inherit;
+        padding: 0.5rem 2rem;
+        border: 2px solid var(--dark);
+        background-color: var(--white);
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: var(--light-grey);
+          border: 2px solid var(--light-grey);
+        }
+
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    display: none;
+
+    @include section;
+
+    p {
+      margin: 5rem 0 1.5rem 0;
+    }
+
+    ul {
+      padding-left: 5rem;
+    }
+  }
+}
+
+.copy-right {
+  @include navmix(row);
+
+  justify-content: space-between;
+
+  .copy {
+    font-weight: 600;
+  }
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.date {
+  align-self: flex-end;
+}
+
+.empty-list {
+  display: none;
+  margin-top: 5rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    color: var(--danger);
+  }
+}
